@@ -27,7 +27,6 @@ app.use((error, req, res, next) => {
 
 // Health check endpoint
 app.get('/', (req, res) => {
-  console.log('🔍 Health check requested from:', req.ip || req.connection.remoteAddress);
   res.json({
     status: 'OK',
     message: 'Webex GitHub Bot is running',
